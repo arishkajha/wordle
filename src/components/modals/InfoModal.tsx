@@ -18,40 +18,41 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="R"
           status="correct"
         />
         <Cell value="E" />
         <Cell value="A" />
-        <Cell value="R" />
+        <Cell value="D" />
         <Cell value="Y" />
+        
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
-      </p>
-
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
-        <Cell
-          isRevealing={true}
-          isCompleted={true}
-          value="L"
-          status="present"
-        />
-        <Cell value="O" />
-        <Cell value="T" />
-      </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        The letter R is in the word and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
         <Cell value="E" />
+        <Cell
+          isRevealing={true}
+          isCompleted={true}
+          value="N"
+          status="present"
+        />
+        <Cell value="O" />
+        <Cell value="M" />
+      </div>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        The letter N is in the word but in the wrong spot.
+      </p>
+
+      <div className="flex justify-center mb-1 mt-4">
+        <Cell value="P" />
+        <Cell value="L" />
+        <Cell value="A" />
+        <Cell isRevealing={true} isCompleted={true} value="Z" status="absent" />
+        <Cell value="A" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter U is not in the word in any spot.
